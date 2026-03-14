@@ -13,7 +13,7 @@ Complex numerical systems in finance, engineering, and scientific computing shar
 
 - **Opacity** — a single output with no traceable audit trail makes debugging painful
 - **Irreproducibility** — no native mechanism to guarantee a calculation can be precisely reconstructed
-- **Manual parallelization** — optimizing for multi-core hardware requires error-prone code refactoring (in progress)
+- **Manual parallelization** — optimizing for multi-core hardware requires error-prone code refactoring
 
 compprov solves all three simultaneously, from a single instrumented execution.
 
@@ -33,8 +33,8 @@ Together they form the **CPG** — a DAG that serves as:
 
 | Repository | Status | Description |
 |---|---|---|
-| [compprov-core](https://github.com/compprov/compprov-core) | 🚧 In development | Context wrapping, CPG construction, VODL descriptors |
-| [compprov-render](https://github.com/compprov/compprov-render) | 🚧 In development | Browser-based graph and plot visualization of CPG data |
+| [compprov-core](https://github.com/compprov/compprov-core) | ✅ First release | Context wrapping, CPG construction, VODL descriptors |
+| [compprov-render](https://github.com/compprov/compprov-render) | ✅ First version | Browser-based graph and plot visualization of CPG data |
 
 ## License
 
