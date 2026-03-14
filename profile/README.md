@@ -34,6 +34,7 @@ Together they form the **CPG** — a DAG that serves as:
 | Repository | Status | Description |
 |---|---|---|
 | [compprov-core](https://github.com/compprov/compprov-core) | 🚧 In development | Context wrapping, CPG construction, VODL descriptors |
+| [compprov-render](https://github.com/compprov/compprov-render) | 🚧 In development | Browser-based graph and plot visualization of CPG data |
 
 ## License
 
