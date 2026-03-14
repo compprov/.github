@@ -13,7 +13,7 @@ Complex numerical systems in finance, engineering, and scientific computing shar
 
 - **Opacity** — a single output with no traceable audit trail makes debugging painful
 - **Irreproducibility** — no native mechanism to guarantee a calculation can be precisely reconstructed
-- **Manual parallelization** — optimizing for multi-core hardware requires error-prone code refactoring
+- **Manual parallelization** — optimizing for multi-core hardware requires error-prone code refactoring (in progress)
 
 compprov solves all three simultaneously, from a single instrumented execution.
 
