@@ -45,12 +45,12 @@ concurrently — without requiring any code changes from the developer.
 The DAG already captures all data dependencies, making it possible to determine which
 operations can safely run in parallel and generate an optimized execution plan automatically.
 
-### compprov-core — Tamper protection via timestamp protocol
+### compprov-core — JSON snapshot signing via timestamp protocol
 
-Introduce cryptographic guarantees over the recorded computation trail. Each variable and
-operation node will be signed with a chained timestamp, making it verifiable that the CPG
-was not modified after execution. Any attempt to alter an input, output, or operation
-record will break the chain and be immediately detectable.
+The exported CPG JSON snapshot will be signed using a timestamp protocol, producing a
+verifiable proof of the snapshot's contents at the moment of export. The signature travels
+with the JSON file, making it possible for any recipient to verify that the file has not
+been altered since it was produced.
 
 ### compprov-analytics — Comparison and backtrace tool
 
