@@ -45,6 +45,13 @@ concurrently — without requiring any code changes from the developer.
 The DAG already captures all data dependencies, making it possible to determine which
 operations can safely run in parallel and generate an optimized execution plan automatically.
 
+### compprov-core — Tamper protection via timestamp protocol
+
+Introduce cryptographic guarantees over the recorded computation trail. Each variable and
+operation node will be signed with a chained timestamp, making it verifiable that the CPG
+was not modified after execution. Any attempt to alter an input, output, or operation
+record will break the chain and be immediately detectable.
+
 ### compprov-analytics — Comparison and backtrace tool
 
 A new module focused on analysis across multiple CPG snapshots:
