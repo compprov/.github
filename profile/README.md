@@ -33,7 +33,7 @@ Together they form the **CPG** — a DAG that serves as:
 
 | Repository | Status | Description |
 |---|---|---|
-| [compprov-core](https://github.com/compprov/compprov-core) | ✅ v0.1.0 | Context wrapping, CPG construction, VODL descriptors |
+| [compprov-core](https://github.com/compprov/compprov-core) | [![GitHub release](https://img.shields.io/github/v/release/compprov/compprov-core?color=brightgreen)](https://github.com/compprov/compprov-core/releases) | Context wrapping and CPG construction |
 | [compprov-render](https://github.com/compprov/compprov-render) | ✅ Ready to use | Browser-based graph and plot visualization of CPG data |
 
 ## Roadmap
