@@ -15,7 +15,9 @@ Complex numerical systems in finance, engineering, and scientific computing shar
 - **Irreproducibility** — no native mechanism to guarantee a calculation can be precisely reconstructed
 - **Manual parallelization** — optimizing for multi-core hardware requires error-prone code refactoring (in progress)
 
-compprov solves all three simultaneously, from a single instrumented execution.
+compprov solves all three simultaneously, from a single instrumented execution. 
+
+Because the serialized CPG serves as a self-contained, immutable record of the operational logic at the moment of execution, it eliminates the necessity of reconstructing legacy software states. This ensures that the numerical integrity of historical data remains verifiable even years after the original computational environment has been decommissioned.
 
 ## How it works
 
