@@ -36,6 +36,7 @@ Together they form the **CPG** — a DAG that serves as:
 | Repository | Status | Description |
 |---|---|---|
 | [compprov-core](https://github.com/compprov/compprov-core) | [![GitHub release](https://img.shields.io/github/v/release/compprov/compprov-core?color=brightgreen)](https://github.com/compprov/compprov-core/releases) | Context wrapping and CPG construction |
+| [compprov-trust](https://github.com/compprov/compprov-trust) | [![GitHub release](https://img.shields.io/github/v/release/compprov/compprov-trust?color=brightgreen)](https://github.com/compprov/compprov-trust/releases) | Signature generation and verification module for the CPG |
 | [compprov-render](https://github.com/compprov/compprov-render) | [![GitHub release](https://img.shields.io/github/v/release/compprov/compprov-render?color=brightgreen)](https://github.com/compprov/compprov-render/releases) | Browser-based graph and plot visualization of CPG data |
 
 ## Roadmap
@@ -46,13 +47,6 @@ Analyze the CPG structure to detect independent branches and schedule their exec
 concurrently — without requiring any code changes from the developer.
 The DAG already captures all data dependencies, making it possible to determine which
 operations can safely run in parallel and generate an optimized execution plan automatically.
-
-### compprov-core — JSON snapshot signing via timestamp protocol
-
-The exported CPG JSON snapshot will be signed using a timestamp protocol, producing a
-verifiable proof of the snapshot's contents at the moment of export. The signature travels
-with the JSON file, making it possible for any recipient to verify that the file has not
-been altered since it was produced.
 
 ### compprov-analytics — Comparison and backtrace tool
 
