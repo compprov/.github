@@ -62,3 +62,4 @@ A new module focused on analysis across multiple CPG snapshots:
 ## License
 
 Apache License 2.0 — Copyright 2026 Minas Abramyan
+[LinkedIn](https://www.linkedin.com/in/mabramyan/)
