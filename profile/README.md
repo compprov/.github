@@ -13,11 +13,9 @@ Complex numerical systems in finance, engineering, and scientific computing shar
 
 - **Opacity** — a single output with no traceable audit trail makes debugging painful
 - **Irreproducibility** — no native mechanism to guarantee a calculation can be precisely reconstructed
-- **Manual parallelization** — optimizing for multi-core hardware requires error-prone code refactoring (in progress)
+- **Software & Codebase Decay** — business logic and software libraries evolve constantly, making legacy calculations nearly impossible to audit years later. Because `CompProv` separates structural lineage from the executable code, it preserves the exact mathematical truth of a calculation in a lightweight Snapshot. For auditing purposes, you don’t need to resurrect dead repositories, dig through obsolete dependencies, or reconstruct broken build environments—as long as the basic wrappers/operation descriptors are provided, the calculation can be analyzed and verified out-of-the-box.
 
 compprov solves all three simultaneously, from a single instrumented execution. 
-
-Because the serialized CPG serves as a self-contained, immutable record of the operational logic at the moment of execution, it eliminates the necessity of reconstructing legacy software states. This ensures that the numerical integrity of historical data remains verifiable even years after the original computational environment has been decommissioned.
 
 ## How it works
 
@@ -29,7 +27,6 @@ Together they form the **CPG** — a DAG that serves as:
 |---|---|
 | Auditing & Debugging | Trace any anomalous result back to the exact input and operation that caused it |
 | Context Comparison | Diff two CPGs to highlight structural or numerical divergence between runs |
-| Auto-Parallelization | Schedule independent DAG branches for concurrent execution automatically |
 
 ## Modules
 
@@ -40,13 +37,6 @@ Together they form the **CPG** — a DAG that serves as:
 | [compprov-render](https://github.com/compprov/compprov-render) | [![GitHub release](https://img.shields.io/github/v/release/compprov/compprov-render?color=brightgreen)](https://github.com/compprov/compprov-render/releases) | Browser-based graph and plot visualization of CPG data |
 
 ## Roadmap
-
-### compprov-core — Automatic parallelization
-
-Analyze the CPG structure to detect independent branches and schedule their execution
-concurrently — without requiring any code changes from the developer.
-The DAG already captures all data dependencies, making it possible to determine which
-operations can safely run in parallel and generate an optimized execution plan automatically.
 
 ### compprov-analytics — Comparison and backtrace tool
 
