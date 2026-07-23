@@ -35,6 +35,7 @@ Together they form the **CPG** — a DAG that serves as:
 | [compprov-core](https://github.com/compprov/compprov-core) | [![GitHub release](https://img.shields.io/github/v/release/compprov/compprov-core?color=brightgreen)](https://github.com/compprov/compprov-core/releases) | Context wrapping and CPG construction |
 | [compprov-trust](https://github.com/compprov/compprov-trust) | [![GitHub release](https://img.shields.io/github/v/release/compprov/compprov-trust?color=brightgreen)](https://github.com/compprov/compprov-trust/releases) | Signature generation and verification module for the CPG |
 | [compprov-render](https://github.com/compprov/compprov-render) | [![GitHub release](https://img.shields.io/github/v/release/compprov/compprov-render?color=brightgreen)](https://github.com/compprov/compprov-render/releases) | Browser-based graph and plot visualization of CPG data |
+| [compprov-analytics](https://github.com/compprov/compprov-analytics) | [![GitHub release](https://img.shields.io/github/v/release/compprov/compprov-analytics?color=brightgreen)](https://github.com/compprov/compprov-analytics/releases) | CLI tool that audits compprov-core Calculation Provenance Graph snapshots |
 
 ## License
 
