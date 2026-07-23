@@ -36,19 +36,6 @@ Together they form the **CPG** — a DAG that serves as:
 | [compprov-trust](https://github.com/compprov/compprov-trust) | [![GitHub release](https://img.shields.io/github/v/release/compprov/compprov-trust?color=brightgreen)](https://github.com/compprov/compprov-trust/releases) | Signature generation and verification module for the CPG |
 | [compprov-render](https://github.com/compprov/compprov-render) | [![GitHub release](https://img.shields.io/github/v/release/compprov/compprov-render?color=brightgreen)](https://github.com/compprov/compprov-render/releases) | Browser-based graph and plot visualization of CPG data |
 
-## Roadmap
-
-### compprov-analytics — Comparison and backtrace tool
-
-A new module focused on analysis across multiple CPG snapshots:
-
-- **Diff / comparison** — given two or more snapshots, detect and rank the most significant
-  numerical and structural differences; highlight which variables and operations diverged and by how much
-- **Backtrace** — for any output variable, walk the CPG backwards to identify which inputs
-  and operations contributed most to a given result or anomaly
-- **Multi-snapshot analysis** — compare a set of runs across different parameter sets or
-  time periods to surface patterns and outliers
-
 ## License
 
 Apache License 2.0 — Copyright 2026 Minas Abramyan
